@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <title>Siscology - Mejora tu vida</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Sistema de ventas</title>
 </head>
-<body>
-    <div class="dashboard"> <!--Dashboard-->
-        <section class="navigation"> <!--Navigation-->
-            <img src="assets/images/logo.png" alt="" width="300px">
-        </section> <!--End Navigation-->
-        <section class="main"> <!--Main-->
-            <span class="material-icons-outlined">
-                dashboard
-                </span>
-        </section> <!--End Main-->
-        <section class="secondary"> <!--Secondary-->
 
-        </section> <!--End Secondary-->
-    </div> <!--End Dashboard-->
+<body>
+    <div class="sidebar"><!--Sidebar-->
+        <div class="sidebar__header">
+            <div class="logo">
+                <h1>SisVentas</h1>
+            </div>
+            <div class="burgerBtn">
+                <a href="#"><span class="material-icons">menu</span></a>
+            </div>
+        </div>
+        <div class="sidebar__menu">
+            <ul>
+                <li><span class="material-icons">
+                    search
+                    </span><input type="text" placeholder="Buscar..." ></li>
+                <li><span class="material-icons">
+                    description
+                    </span><a href="#">Informe general</a></li>
+                <li><span class="material-icons">
+                    perm_identity
+                    </span><a href="#">Clientes</a></li>
+                <li><span class="material-icons">
+                    supervisor_account
+                    </span><a href="#">Proveedores</a></li>
+                <li><span class="material-icons">
+                    account_circle
+                    </span><a href="#">Empleados</a></li>
+                <li><span class="material-icons">
+                    shopping_cart
+                    </span><a href="#">Ventas</a></li>
+                <li><span class="material-icons">
+                    account_balance
+                    </span><a href="#">Compras</a></li>
+                <li><span class="material-icons">
+                    assignment
+                    </span><a href="#">Inventario</a></li>
+                <li><span class="material-icons">
+                    store
+                    </span><a href="#">Productos</a></li>
+                <li><span class="material-icons">
+                    analytics
+                    </span><a href="#">Reportes</a></li>
+            </ul>
+        </div>
+        <div class="sidebar__profile">
+            <div class="profile">
+                <div class="profile__details">
+                    <!-- <img src="" alt=""> -->
+                    <div class="profile__text">
+                        <div class="name">
+                            <span>Nicolas</span>
+                        </div>
+                        <div class="puesto">
+                            <span>Administrador</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__exit">
+                    <a href="#">
+                        <span class="material-icons">
+                            logout
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div><!--End sidebar-->
+
+    <!--Scripts-->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
